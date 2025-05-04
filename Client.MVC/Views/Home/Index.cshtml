@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    string one = ViewBag.One;
+    string two = ViewBag.Two;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    @if (!string.IsNullOrEmpty(one))
+    {
+        <p>Service One: @one</p>
+    }
+    @if (!string.IsNullOrEmpty(two))
+    {
+        <p>Service Two: @two</p>
+    }
+</div>
